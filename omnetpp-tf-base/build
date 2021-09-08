@@ -1,0 +1,2 @@
+#!/bin/sh
+docker build -t omnetpp/omnetpp-tf-base:tf2.6.0 .
