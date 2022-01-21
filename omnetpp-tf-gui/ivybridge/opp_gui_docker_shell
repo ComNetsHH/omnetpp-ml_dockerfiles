@@ -1,0 +1,2 @@
+#!/bin/sh
+docker run --rm -it -v "$(pwd):/root/models" -u "$(id -u):$(id -g)" -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY ghcr.io/comnetshh/omnetpp-ml/omnetpp-tf-gui:tf2.6.0-ivybridge-5.6.2
