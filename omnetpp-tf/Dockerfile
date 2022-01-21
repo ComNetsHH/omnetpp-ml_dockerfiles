@@ -1,4 +1,4 @@
-FROM omnetpp/omnetpp-tf-base:tf2.6.0 as base
+FROM ghcr.io/comnetshh/omnetpp-ml/omnetpp-tf-base:tf2.6.0 as base
 LABEL maintainer="Daniel Stolpmann <daniel.stolpmann@tuhh.de>"
 
 # first stage - build omnet

@@ -1,7 +1,7 @@
-#!/usr/bin/env docker build --build-arg VERSION=5.6.2 -t omnetpp/omnetpp-tf-gui:tf2.6.0-5.6.2 .
+#!/usr/bin/env docker build --build-arg VERSION=5.6.2 -t ghcr.io/comnetshh/omnetpp-ml/omnetpp-tf-gui:tf2.6.0-5.6.2 .
 #
 
-FROM omnetpp/omnetpp-tf-base:tf2.6.0 as base
+FROM ghcr.io/comnetshh/omnetpp-ml/omnetpp-tf-base:tf2.6.0 as base
 LABEL maintainer="Daniel Stolpmann <daniel.stolpmann@tuhh.de>"
 RUN apt-get update -y && apt-get install -y --no-install-recommends qt5-default libqt5opengl5-dev \
             libgtk-3-0 libwebkit2gtk-4.0-37 default-jre gcc g++ gdb

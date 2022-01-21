@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t omnetpp/omnetpp-tf-base:tf2.6.0 .
+docker build -t ghcr.io/comnetshh/omnetpp-ml/omnetpp-tf-base:tf2.6.0 .
