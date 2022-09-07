@@ -1,5 +1,7 @@
 FROM ghcr.io/comnetshh/omnetpp-ml/omnetpp-tf-base:tf2.6.0 as base
 LABEL maintainer="Daniel Stolpmann <daniel.stolpmann@tuhh.de>"
+LABEL org.opencontainers.image.description="Ubuntu based image derived from floopcz/tensorflow_cc:ubuntu containing a pre-built OMNeT++ distribution and TensorFlow for quickly compiling and running a model in Cmdenv (No IDE or Qtenv support!)"
+LABEL org.opencontainers.image.licenses=""
 
 # first stage - build omnet
 FROM base as builder

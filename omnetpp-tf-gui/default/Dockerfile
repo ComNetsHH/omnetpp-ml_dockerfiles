@@ -3,6 +3,9 @@
 
 FROM ghcr.io/comnetshh/omnetpp-ml/omnetpp-tf-base:tf2.6.0 as base
 LABEL maintainer="Daniel Stolpmann <daniel.stolpmann@tuhh.de>"
+LABEL org.opencontainers.image.description="Ubuntu based image derived from floopcz/tensorflow_cc:ubuntu containing a pre-built OMNeT++ with all GUI tools (except OSG and osgEarth) and TensorFlow, that can be accessed using X from the host"
+LABEL org.opencontainers.image.licenses=""
+
 RUN apt-get update -y && apt-get install -y --no-install-recommends qt5-default libqt5opengl5-dev \
             libgtk-3-0 libwebkit2gtk-4.0-37 default-jre gcc g++ gdb
 
